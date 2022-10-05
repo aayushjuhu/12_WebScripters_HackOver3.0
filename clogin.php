@@ -71,7 +71,7 @@ span.psw {
 
 <h1 style="font-family:Peralta;font-size:40px; color:#4b75f1">Evenistaa</h1>
 
-<form action="/action_page.php" method="post">
+<form action="ccheck.php" method="post">
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -80,15 +80,12 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
     <a href="index.html"><button type="button" class="cancelbtn bottom">Cancel</button></a>
     <span class="psw"><a href="#">Forgot password?</a></span>
-	<span class="pull-right"><a href="osignup.php">New user?</a></span>
+	<span class="pull-right"><a href="csignup.html">New user?</a></span>
   </div>
 </form>
 

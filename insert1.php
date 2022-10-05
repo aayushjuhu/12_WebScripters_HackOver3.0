@@ -2,7 +2,7 @@
 <html>
  
 <head>
-    <title>Insert Page page</title>
+    <title>Insert page</title>
 </head>
  
 <body>
@@ -22,24 +22,24 @@
         }
          
         // Taking all 5 values from the form data(input)
-        $first_name =  $_REQUEST['fname'];
-        $last_name = $_REQUEST['lname'];
+        $event_name =  $_REQUEST['ename'];
+        $org_name = $_REQUEST['oname'];
         $email = $_REQUEST['email'];
-        $age = $_REQUEST['age'];
-        $gender = $_REQUEST['gend'];
-        $psw = $_REQUEST['psw'];
-        $cpsw = $_REQUEST['psw-repeat'];
+        $pno = $_REQUEST['pno'];
+        $evd = $_REQUEST['evd'];
+        $dt = $_REQUEST['date'];
+        
          
         // Performing insert query execution
         // here our table name is college
-        $sql = "INSERT INTO customer  VALUES ('$first_name',
-            '$last_name','$email','$age','$gender','$psw','$cpsw')";
+        $sql = "INSERT INTO organization  VALUES ('$event_name',
+            '$org_name','$email','$pno','$evd','$dt')";
          
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>";
  
-            echo nl2br("\n$fname\n $lname\n "
-                . "$gender\n $address\n $email");
+            echo nl2br("\nename\n $oname\n "
+                . "$pno\n $evd\n $dt");
         } else{
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($conn);

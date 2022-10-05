@@ -76,40 +76,32 @@ button:hover {
 </style>
 <body>
 <h1 style="font-family:Peralta;font-size:40px; color:#4b75f1">Evenistaa</h1>
-<form action="insert.php" method="post" style="border:1px solid #ccc">
+<form action="insert1.php" method="post" style="border:1px solid #ccc">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
-    <label for="fname"><b>First Name</b></label>
-    <input type="text" placeholder="First Name" name="fname" required>
+    <label for="fname"><b>Event Name</b></label>
+    <input type="text" placeholder="First Name" name="ename" required>
 
-    <label for="lname"><b>Last Name</b></label>
-    <input type="text" placeholder="last name" name="lname" required>
+    <label for="lname"><b>Organizer Name</b></label>
+    <input type="text" placeholder="last name" name="oname" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="age"><b>Age</b></label>
-    <input type="integer" placeholder="age" name="age" required>
-    
-    <div class="form-check">
-        <label for="gen"><b><br>Gender</b></label>
-        <input type="radio" class="form-check-input" id="check1" name="gend" value="Male" checked>
-        <label class="form-check-label" for="check1">Male</label>
-        <input type="radio" class="form-check-input" id="check2" name="gend" value="female">
-        <label class="form-check-label" for="check2">Female</label>
-      </div>
-    <br>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="pno"><b>Phone no.</b></label>
+    <input type="integer" placeholder="Phone no." name="pno" required>
+    <br><br>
+    <label for="ed"><b>Event details</b></label>
+    <input type="text" placeholder="Enter Password" name="evd" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="Date"><b>Date</b></label>
+    <input type="date" placeholder="Date" name="date" required>
 
     <div class="clearfix">
       <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
-      <a href="clogin.html>"><button type="submit" class="signupbtn">Sign Up</button></a>
+      <a href="ologin.html"><button type="submit" class="signupbtn">Sign Up</button></a>
     </div>
   </div>
 </form>
